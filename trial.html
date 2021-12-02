@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Chatbot by Prisha Lala</title>
+<style>
+body{background-image:url(title.png)}
+</style>
+</head>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "ed27317b-5280-4adb-aaec-db938063ee4c", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "78a2b21a-fff5-44ba-bc98-b938f50de65e", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+    document.head.appendChild(t);
+  });
+</script>
+
+</html>
